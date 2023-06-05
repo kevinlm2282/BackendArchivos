@@ -48,11 +48,12 @@ public class ProductController {
     // }
 
     @RequestMapping(value="/products", method=RequestMethod.POST)
-    public ResponseEntity<String> postProduct(@RequestParam("file") MultipartFile file, @RequestParam("data") String data) throws JsonMappingException, JsonProcessingException {
+    public ResponseEntity<String> postProduct(@RequestParam(required = false, name = "file") MultipartFile file, @RequestParam("data") String data) throws JsonMappingException, JsonProcessingException {
         LOGGER.info("data de entrada {}", data);
         LOGGER.info("imagen de entrada {}", file);
         productService.saveProduct(data, file);
         return new ResponseEntity<>(data,HttpStatus.OK);
+        
     }
     
     
