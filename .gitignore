@@ -34,4 +34,4 @@ build/
 
 ### prueba ###
 
-*.txt
+src/main/java/com/example/archivos/prueba.txt
