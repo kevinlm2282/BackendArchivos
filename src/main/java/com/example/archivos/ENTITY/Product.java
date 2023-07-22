@@ -11,7 +11,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "products", schema = "archivos")
+// @Table(name = "products", schema = "archivos")
+@Table(name = "products")
 @Getter
 @Setter
 @NoArgsConstructor
@@ -27,4 +28,7 @@ public class Product {
     private Double price;
     @Column(name = "image")
     private String image;
+    // @Column(name = "color")
+    // private String color;
+
 }
