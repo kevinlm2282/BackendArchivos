@@ -35,5 +35,4 @@ build/
 ### prueba ###
 
 src/main/java/com/example/archivos/prueba.txt
-
 src/main/java/com/example/archivos/ENTITY/Product.java
