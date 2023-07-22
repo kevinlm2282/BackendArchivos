@@ -31,4 +31,6 @@ public class Product {
     // @Column(name = "color")
     // private String color;
 
+    //Esta es la prueba de que ningun cambiose hizo en el repo
+
 }
